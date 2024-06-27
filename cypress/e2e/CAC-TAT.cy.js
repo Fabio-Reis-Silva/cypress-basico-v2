@@ -231,7 +231,7 @@ describe('Centra de Atendimento ao Cliente TAT', function () {
                 expect(body).to.include('CAC TAT')
             })
     })
-    it.only('encontre o gato', function () {
+    it('encontre o gato', function () {
         cy.get('span[id="cat"]')
             .should('not.be.visible')
             .invoke('show')
